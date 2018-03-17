@@ -1,0 +1,24 @@
+{
+  "name": "tdd_js",
+  "version": "1.0.0",
+  "description": "JavaScript library from TDD in pratice's course ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucascomputacao/tdd_js.git"
+  },
+  "keywords": [
+    "js",
+    "tdd",
+    "library"
+  ],
+  "author": "Lucas Borges <lucascomputacao@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lucascomputacao/tdd_js/issues"
+  },
+  "homepage": "https://github.com/lucascomputacao/tdd_js#readme"
+}
