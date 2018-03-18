@@ -4,10 +4,9 @@
   "description": "JavaScript library from TDD in pratice's course ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint src/*.js",
     "test": "npm run lint",
-    "will": "echo hey"
+    "lint": "eslint src/*.js",
+    "prepush": "npm run lint"
   },
   "repository": {
     "type": "git",
@@ -27,6 +26,7 @@
   "devDependencies": {
     "eslint": "^4.19.0",
     "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.9.0"
+    "eslint-plugin-import": "^2.9.0",
+    "husky": "^0.14.3"
   }
 }
