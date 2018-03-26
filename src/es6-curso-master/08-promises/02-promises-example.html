@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <access origin="https://willianjusten.com.br/"/>
+<head>
+    <title>02 - Promises Example</title>
+</head>
+<body>
+</body>
+
+<script>
+  var myHeaders = new Headers();
+  var myInit = { method: 'POST',
+               headers: {
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Headers": "Origin",
+                "Content-Type": "Accept"
+                 },
+               mode: 'cors',
+               cache: 'default' };
+
+    var posts    =
+    fetch('https://www.willianjusten.com.br/search.json',myInit);
+
+    // pending
+    // resolved
+    // rejected
+
+    posts
+        .then(data => data.json())
+        .then(data => data.map(post => {
+            console.log(post.title);
+        }));
+</script>
+</html>

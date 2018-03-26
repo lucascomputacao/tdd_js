@@ -1,6 +1,14 @@
-const a = 3;
-const b = 2;
-const c = 'as';
+const fizzBuzz = (number) => {
+  if(number === 0) return number;
+  if(number % 3 === 0 && number % 5 === 0) return 'FizzBuzz';
+  if(number % 3 === 0) return 'Fizz';
+  if(number % 5 === 0) return 'Buzz';
+  // otherwise
+  return number;
+}
 
-console.log(a, b, c);
+function foo(){
+  return 'bla';
+}
 
+export {fizzBuzz}
